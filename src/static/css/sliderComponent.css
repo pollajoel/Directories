@@ -1,0 +1,50 @@
+.headerbackground{
+    background-color: #f0f4f7;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-image: url("../../static/images/11Z_2102.w015.n001.343B.p15.343.jpg");
+}
+
+.Categories{
+    cursor: pointer;
+    width: 10%;
+    border: 1px solid #ffffff;
+    width:100px;
+    margin-right: 7px;
+    background-color: #ffffff;
+    padding: 6px 10px 1px 10px;
+    height: 87px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.Categories:hover{
+    background-color: #fe5960;
+    color: white;
+}
+
+.categoriesList{
+    display: flex;
+    width: 100%;
+    padding-left: 15%;
+    padding-top: 52px;
+}
+
+
+.homebarre{
+    position: relative;
+    top: -103px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.blockContainer{
+    width: 80%;
+    height: 550px;
+    background-color: white;
+    border: 1px solid #f5f6f8;
+}

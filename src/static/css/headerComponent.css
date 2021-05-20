@@ -1,0 +1,108 @@
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    /*background: #f0f4f7;*/
+    height: 63px;
+}
+
+.searchForm{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__layout{
+    display: flex;
+    width: 100%;
+    padding: 20px 0px 0px 90px
+}
+
+.layout__contact, .layout__login{
+    width: 50%;
+    display: flex;
+}
+
+.what{
+    height: 29px;
+    width: 350px;
+    border: 0px;
+}
+
+.what:focus, .where:focus{
+    outline: none;
+}
+
+.where{
+    height: 29px;
+    width: 450px;
+    border: 0px;
+}
+
+
+
+.searchlabel{
+    font-weight: bold;
+}
+
+.FormLayout{
+    display: flex;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding-bottom: 10px;
+    border: 1px solid #f0f4f7;
+    padding: 9px;
+
+}
+
+.wherestate{
+    position: absolute;
+    list-style: none;
+    margin-top: 59px;
+    background-color: #fff;
+    width: 313px;
+     display: none;
+}
+
+
+.Searresultat{
+    position: absolute;
+    list-style: none;
+    margin-top: 59px;
+    background-color: #fff;
+    width: 412px;
+    display: none;
+}
+
+.searchbutton{
+    height: 70px;
+    border: 0px;
+    cursor: pointer;
+    color:#fff;
+    background-color: #fe565d;
+    padding: 0px 25px 0px 25px;
+}
+
+.formInputsearch{
+    margin-left: 10px;
+}
+
+.sliderTitle{
+    display: flex;
+    justify-content: left;
+    padding-left: 194px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+
+.sectionhome{
+    height: 500px;
+    width: 1000vh;
+}
