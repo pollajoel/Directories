@@ -10,7 +10,7 @@ const FooterContainer = styled.div`
 const Footer = ()=>{
 
     return(
-        <FooterContainer>Footer component </FooterContainer>
+        <FooterContainer>Footer componentd  </FooterContainer>
     )
 }
 
