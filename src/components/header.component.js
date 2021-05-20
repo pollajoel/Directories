@@ -1,5 +1,5 @@
 import React from "react"
-import styled ,{css} from 'styled-components';
+import styled  from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope,faPhoneAlt,faCoffee} from '@fortawesome/free-solid-svg-icons';
@@ -39,17 +39,7 @@ const ContainLayout = styled.div `
 `
 
 
-const Languages = styled.ul `
-    list-style: none;
-    position: relative;
-    top: -16px;
-    left: -30px;
-    z-index:1;
-`
 
-const LanguageLi  = styled.li `
-    width:100%
-`
 
 
 
@@ -57,7 +47,7 @@ const LanguageLi  = styled.li `
 
 const HeaderComponent =()=>{
     return (
-        //-- header component start
+
         <Header>
             <Layout>
                 <ContainLayout><FontAwesomeIcon icon={faCoffee} size="xs" /></ContainLayout>
@@ -68,7 +58,6 @@ const HeaderComponent =()=>{
                 <ContainLayout> <FontAwesomeIcon icon={faEnvelope}/>info@vitrinrAfricaine.be</ContainLayout>
             </Layout>
 
-            //Login and connexion
             <Layout>
                 <ContainLayout>
                     <ul>

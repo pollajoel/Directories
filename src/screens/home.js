@@ -8,9 +8,6 @@ const  HomePage = styled.div `
     margin:0px;
     padding:0px;
     overflow:hidden;
-    
-
-
 `
 
 
