@@ -4,7 +4,7 @@ import Footer from "../components/footer.component";
 import styled from "styled-components";
 
 
-const  HomePage = styled.body `
+const  HomePage = styled.div `
     margin:0px;
     padding:0px;
     overflow:hidden;

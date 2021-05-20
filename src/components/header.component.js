@@ -2,7 +2,7 @@ import React from "react"
 import styled ,{css} from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope,faPhoneAlt} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope,faPhoneAlt,faCoffee} from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -60,7 +60,7 @@ const HeaderComponent =()=>{
         //-- header component start
         <Header>
             <Layout>
-                <ContainLayout><FontAwesomeIcon icon="coffee" size="xs" /></ContainLayout>
+                <ContainLayout><FontAwesomeIcon icon={faCoffee} size="xs" /></ContainLayout>
                 <ContainLayout>In</ContainLayout>
                 <ContainLayout> </ContainLayout>
                 <ContainLayout>in</ContainLayout>
