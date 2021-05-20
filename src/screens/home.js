@@ -1,12 +1,26 @@
 import React from 'react';
 import HeaderComponent from "../components/header.component";
+import Footer from "../components/footer.component";
+import styled from "styled-components";
+
+
+const  HomePage = styled.body `
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    
+
+
+`
 
 
 
 const Home =()=>{
-    return (<div class="index__page">
-        <HeaderComponent></HeaderComponent>
-    </div>)
+    return (
+        <HomePage>
+            <HeaderComponent></HeaderComponent>
+            <Footer></Footer>
+        </HomePage>)
 }
 
 
