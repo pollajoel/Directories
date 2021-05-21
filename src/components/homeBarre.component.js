@@ -81,7 +81,7 @@ const HomeBarre = ()=>{
                 <div className="featuredetails">
                     {
                         data.map(elt =><div key={elt.id} className="featurecontain">
-                            <div className="iconblock"><img src={elt.icon} className="iconfeature"/></div><div className="titleblockfeature titlelt">{elt.title}</div>
+                            <div className="iconblock"><img src={elt.icon} className="iconfeature" alt={elt.description}/></div><div className="titleblockfeature titlelt">{elt.title}</div>
                             <div  className="iconblock number">{elt.id}</div><div className="titleblockfeature">{elt.description}</div>
                         </div>)
                     }
@@ -92,7 +92,7 @@ const HomeBarre = ()=>{
                  <Slider {...settings}>
                      {
                          features.map(elt=><div key={elt.id}>
-                             <img src={elt.img} className="slickslider"/>
+                             <img src={elt.img} className="slickslider" alt={elt.title}/>
                              <h3>{elt.title}</h3>
                              <p>{elt.description}</p>
                          </div>)
