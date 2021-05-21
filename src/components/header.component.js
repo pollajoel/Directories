@@ -35,7 +35,7 @@ const HeaderComponent =()=>{
                     </ul>
                     <div className="loginnavbar">
                         <div className="avatar">
-                            <ul class="avatar_login">
+                            <ul className="avatar_login">
                                <li>
                                    <FontAwesomeIcon icon={faUserCircle}/>
                                    <ul className="menuconnexion">

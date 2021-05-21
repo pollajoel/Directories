@@ -12,7 +12,7 @@ const Slider = ()=>{
         {name:"catName3", icon:"catIcon"},
         {name:"catName4", icon:"catIcon"},
         {name:"catName5", icon:"catIcon"},
-        {name:"catName5", icon:"catIcon"},
+        {name:"catName6", icon:"catIcon"},
     ]
 
 
