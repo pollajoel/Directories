@@ -98,7 +98,7 @@
     justify-content: left;
     padding-left: 194px;
     margin-bottom: 15px;
-    color: #fff;
+    color: #000;
 }
 
 
@@ -106,3 +106,105 @@
     height: 500px;
     width: 1000vh;
 }
+
+
+
+.slickslider{
+    width: 95%;
+    height: 300px;
+}
+
+.navmenu{
+    display: flex;
+    list-style: none;
+}
+
+.navmenu > li {
+    width: 70px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+
+.navmenu li ul {
+    display: none;
+    list-style: none;
+    background-color: #ffffff;
+    width: 120px;
+    padding: 23px;
+    font-size: 14px;
+}
+
+.navmenu li ul li{
+    padding: 6px 0px 6px 0px;
+}
+
+.navmenu li ul li:hover{
+    color:red;
+}
+
+
+
+
+
+
+
+.navmenu li:hover ul{
+    display: block;
+}
+
+.loginnavbar{
+    width: 300px;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 27px;
+}
+
+.avatar{
+    margin-right: 18px;
+}
+
+.add_button{
+    border: 0;
+     background-color: #fe5960;
+    padding: 4px 20px 4px 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: -6px;
+    position: absolute;
+}
+
+.add_button:hover{
+    background-color: #ffb01c;
+}
+
+.avatar_login{
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.menuconnexion{
+    position: absolute;
+    list-style: none;
+    background: #fff;
+    padding: 10px 0px 10px 0px;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.avatar_login li > ul {
+    display: none;
+}
+.avatar_login li:hover ul{
+    display: block;
+    display: flex;
+}
+

@@ -1,9 +1,12 @@
 import React from "react"
 /*
 import styled  from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope,faPhoneAlt,faCoffee} from '@fortawesome/free-solid-svg-icons';
 */
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus,faUserCircle} from '@fortawesome/free-solid-svg-icons';
+
+
 import "../static/css/headerComponent.css";
 const HeaderComponent =()=>{
     return (
@@ -16,10 +19,34 @@ const HeaderComponent =()=>{
                     <div>Lien</div>
                 </div>
                 <div className="layout__login">
-                    <div>Lien</div>
-                    <div>Lien</div>
-                    <div>Lien</div>
-                    <div>Lien</div>
+                    <ul className="navmenu">
+                        <li>Explorer
+                            <ul>
+                                <li>Nos annonces</li>
+                                <li>Nos annonces</li>
+                                <li>Nos annonces</li>
+                                <li>Nos annonces</li>
+                                <li>Nos annonces</li>
+                            </ul>
+                        </li>
+                        <li>Aide ?</li>
+                        <li>Blog</li>
+                        <li>Compétences</li>
+                    </ul>
+                    <div className="loginnavbar">
+                        <div className="avatar">
+                            <ul class="avatar_login">
+                               <li>
+                                   <FontAwesomeIcon icon={faUserCircle}/>
+                                   <ul className="menuconnexion">
+                                       <li>Connexion</li>
+                                       <li>Inscription</li>
+                                   </ul>
+                               </li>
+                            </ul>
+                        </div>
+                        <div> <button className="add_button">Publier <FontAwesomeIcon icon={faPlus}/> </button></div>
+                    </div>
                 </div>
             </div>
         </div>

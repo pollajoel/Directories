@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    background-image: url("../../static/images/11Z_2102.w015.n001.343B.p15.343.jpg");
+    background-image: url("../../static/images/midtown-manhattan-new-york-city-usa.jpg");
 }
 
 .Categories{
@@ -35,7 +35,7 @@
 
 .homebarre{
     position: relative;
-    top: -103px;
+    top: -140px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -44,7 +44,56 @@
 
 .blockContainer{
     width: 80%;
-    height: 550px;
+    height: 750px;
     background-color: white;
     border: 1px solid #f5f6f8;
+    padding: 37px;
 }
+
+
+.featuredetails{
+    display: flex;
+    margin-left: 16px;
+}
+
+.featurecontain{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+
+.iconfeature{
+    width: 50%;
+}
+
+.iconblock{
+    width: 20%;
+}
+
+.titleblockfeature{
+    width: 80%;
+    font-size: 14px;
+    text-align: left;
+    color: #6a737d;
+}
+.titlelt{
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+}
+
+
+.number{
+    font-size: 42px;
+    color: #6a737d;
+    font-weight: bold;
+}
+
+.underline{
+    height: 2px;
+    background:  #f5f6f8;
+    margin: 45px 0px 40px 0px;
+    border:0;
+}
+
