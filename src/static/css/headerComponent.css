@@ -98,7 +98,7 @@
     justify-content: left;
     padding-left: 194px;
     margin-bottom: 15px;
-    color: #000;
+    color: #fff;
 }
 
 
@@ -132,7 +132,7 @@
     display: none;
     list-style: none;
     background-color: #ffffff;
-    width: 120px;
+     width: 100px;
     padding: 23px;
     font-size: 14px;
 }
@@ -172,7 +172,6 @@
     padding: 4px 20px 4px 20px;
     color: #fff;
     cursor: pointer;
-    margin-top: -6px;
     position: absolute;
 }
 
@@ -185,6 +184,8 @@
     margin:0px;
     padding: 0px;
     cursor: pointer;
+    z-index: 0;
+    opacity: 0.9;
 }
 
 .menuconnexion{

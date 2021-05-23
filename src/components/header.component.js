@@ -5,18 +5,24 @@ import styled  from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus,faUserCircle} from '@fortawesome/free-solid-svg-icons';
+import logo from "../static/images/logo_small.png";
+import styled from "styled-components";
 
 
 import "../static/css/headerComponent.css";
+
+
+const Logo = styled.img `
+    width: 30%;
+`
+
+
 const HeaderComponent =()=>{
     return (
         <div className="header">
             <div className="header__layout">
                 <div className="layout__contact">
-                    <div>Lien</div>
-                    <div>Lien</div>
-                    <div>Lien</div>
-                    <div>Lien</div>
+                    <div><Logo src={logo} alt="annuaire 237"/></div>
                 </div>
                 <div className="layout__login">
                     <ul className="navmenu">
@@ -29,9 +35,9 @@ const HeaderComponent =()=>{
                                 <li>Nos annonces</li>
                             </ul>
                         </li>
+                        <li>Panier</li>
                         <li>Aide ?</li>
                         <li>Blog</li>
-                        <li>Compétences</li>
                     </ul>
                     <div className="loginnavbar">
                         <div className="avatar">
