@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import backgroundImage from "../static/images/footer.jpg";
 import logo from "../static/images/building.jpg";
+import Menu from "../config/RouteMenu";
+import {Link} from "react-router-dom";
 
 
 
@@ -159,11 +161,11 @@ const Footer = ()=>{
                 </NewsletterBlock>
             </FooterMenu>
             <BlockMenucontain>
-                    <FooterWidget>Partnership
+                    <FooterWidget>L'annuaire
                         <WidgetMenuul>
-                            <WidgetMenili>About</WidgetMenili>
-                            <WidgetMenili>About</WidgetMenili>
-                            <WidgetMenili>About</WidgetMenili>
+                            <WidgetMenili><Link to={Menu.home}>Accueil</Link> </WidgetMenili>
+                            <WidgetMenili><Link to={Menu.about}>A propos</Link></WidgetMenili>
+                            <WidgetMenili><Link to={Menu.about}>Comment ça Marche?</Link></WidgetMenili>
                         </WidgetMenuul>
                     </FooterWidget>
                     <FooterWidget>

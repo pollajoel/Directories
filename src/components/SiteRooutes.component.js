@@ -4,7 +4,9 @@ import jobs from "../static/images/jobs.jpg";
 import events from "../static/images/events.jpg";
 import manread from "../static/images/man-reading-newspaper.jpg"
 import compagny from "../static/images/finances.jpg";
-import directing from "../static/images/directing.jpg"
+import directing from "../static/images/directing.jpg";
+import Menu from "../config/RouteMenu";
+import {Link} from "react-router-dom";
 
 const SectionRoute = styled.div `
     
@@ -71,15 +73,16 @@ const SiteRooutes = ()=>{
     return(
         <SectionRoute>
             <SectionTitle image={directing}>
-                <div>L'annuaire</div>
+
+                <div><Link to={Menu.directories}>L'annuaire</Link></div>
             </SectionTitle>
             <SectionDirectories>
                 <Title>Accédez à nos services.</Title>
                 <Blockjob>
-                    <Element image={jobs}>offres d'emplois</Element>
-                    <Element image={manread}>Actualités</Element>
-                    <Element image={events}>Evènements</Element>
-                    <Element image={compagny}>Entreprises</Element>
+                    <Element image={jobs}><Link to={Menu.jobs}>offres d'emplois</Link></Element>
+                    <Element image={manread}><Link to={Menu.blog}>Actualités</Link></Element>
+                    <Element image={events}><Link to={Menu.event}>Evènements</Link></Element>
+                    <Element image={compagny}><Link to={Menu.enterprise}>Entreprises</Link></Element>
                 </Blockjob>
             </SectionDirectories>
         </SectionRoute>

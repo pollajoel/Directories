@@ -77,7 +77,7 @@ const Directories = (props)=>{
             <Title>Annonces à  la une</Title>
             <Slider {...settings}>
                 {
-                    props.data.map(elt =><Listing list={elt} key={elt.id}></Listing>)
+                    props.data.map(elt =><Listing list={elt} key={elt.name}></Listing>)
                 }
             </Slider>
         </SectionListing>
