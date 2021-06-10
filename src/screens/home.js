@@ -1,5 +1,4 @@
 import React from 'react';
-import HeaderComponent from "../components/header.component";
 import Footer from "../components/footer.component";
 import styled from "styled-components";
 import Slider from "../components/slider.component";
