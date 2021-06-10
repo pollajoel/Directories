@@ -2,7 +2,6 @@ import React from 'react';
 import Footer from "../components/footer.component";
 import styled from "styled-components";
 import Slider from "../components/slider.component";
-import SiteRooutes from "../components/SiteRooutes.component";
 import Directories from "../components/directories.component";
 import image from "../static/images/midtown-manhattan-new-york-city-usa.jpg"
 import Navbar from '../components/homeBarre.component';
@@ -107,7 +106,7 @@ const Home =()=>{
             <CovidBarre></CovidBarre>
             <Slider></Slider>
             <Directories data={Data}></Directories>
-            <SiteRooutes></SiteRooutes>
+            
             <Footer></Footer>
         </HomePage>)
 }

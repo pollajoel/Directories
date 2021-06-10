@@ -65,7 +65,7 @@ width: 20%;
 `
 
 const ButonLayout = styled.div`
-   background-color:#36b34b;
+   background-color:#34489f;
    width: 10%;
     height: 52px;
     margin-top: -11px;
@@ -77,7 +77,7 @@ const ButonLayout = styled.div`
 `
 
 const SubmitButton = styled(ButtonCheck) `
-    background-color:#36b34b;
+    background-color:#34489f;
     color:#fff;
 
 `
@@ -88,6 +88,17 @@ const TitleContainer = styled.div `
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 30px;
+`
+
+
+const Separator = styled.hr `
+    border: medium none;
+    background-color: rgb(237, 237, 237);
+    width: 1px;
+    height: 25px;
+    margin: 0px;
+
+
 `
 
 
@@ -102,10 +113,10 @@ const Slider = ()=>{
                     <Departlayout>
                         <ButtonCheck><span><CheckBox></CheckBox></span><Labelbutton> Départ</Labelbutton></ButtonCheck>
                     </Departlayout>
-
                     <Departlayout>
                         <ButtonCheck><span><CheckBox></CheckBox></span> <Labelbutton>Destination</Labelbutton></ButtonCheck>
                     </Departlayout>
+                    <Separator/>
                     
                     <Secondlayout>
                         <ButtonCheck>
@@ -113,6 +124,7 @@ const Slider = ()=>{
                             <Labelbutton>Aujourd'hui</Labelbutton>
                         </ButtonCheck>
                     </Secondlayout>
+                    <Separator/>
 
                     <Secondlayout>
                         <ButtonCheck>
