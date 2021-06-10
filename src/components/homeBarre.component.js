@@ -102,8 +102,8 @@ const Navbar = ()=>{
                
                 {
                   Menudata.display==="none"?
-                  (<><Usericon src={userIcon}/> <Icon><FontAwesomeIcon icon={faAngleUp} onClick ={(e)=>openMenu(e)}/></Icon></>)
-                  :(<><Usericon src={userIcon}/> <Icon><FontAwesomeIcon icon={faAngleDown} onClick ={(e)=>openMenu(e)} /></Icon></>) 
+                  (<><Usericon src={userIcon} onClick ={(e)=>openMenu(e)}/> <Icon><FontAwesomeIcon icon={faAngleUp} onClick ={(e)=>openMenu(e)}/></Icon></>)
+                  :(<><Usericon src={userIcon} onClick ={(e)=>openMenu(e)}/> <Icon><FontAwesomeIcon icon={faAngleDown} onClick ={(e)=>openMenu(e)} /></Icon></>) 
                }
               
 
