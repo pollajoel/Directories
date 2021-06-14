@@ -31,13 +31,17 @@ const Text = styled.div `
 
 const AddTrip = styled.button `
 
-background: #36b34b;
+background:  #34489f;
 border: 0px;
 height: 47px;
 border-radius: 23px;
 color: #fff;
 font-size: 15px;
 padding: 0px 14px 0px 14px;
+cursor: pointer;
+&:hover{
+  background-color: #36b34b;
+}
 `
 
 

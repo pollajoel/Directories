@@ -6,6 +6,8 @@ import Directories from "../components/directories.component";
 import image from "../static/images/midtown-manhattan-new-york-city-usa.jpg"
 import Navbar from '../components/homeBarre.component';
 import CovidBarre from '../components/Covidbarre.components';
+import Bus from '../components/bus.component';
+import DescriptionBarre from '../components/descriptionBarre.component';
 
 
 const  HomePage = styled.div `
@@ -106,6 +108,8 @@ const Home =()=>{
             <CovidBarre></CovidBarre>
             <Slider></Slider>
             <Directories data={Data}></Directories>
+            <Bus></Bus>
+            <DescriptionBarre></DescriptionBarre>
             
             <Footer></Footer>
         </HomePage>)

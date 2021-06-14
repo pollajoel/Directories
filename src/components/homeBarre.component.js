@@ -4,6 +4,7 @@ import logo from "../static/images/logo.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faPlusCircle, faAngleDown,faAngleUp} from '@fortawesome/free-solid-svg-icons';
 import userIcon from '../static/images/user.png';
+import { Link } from 'react-router-dom';
 
 
 const Header = styled.div `
@@ -32,6 +33,9 @@ const Menu = styled.ul `
     color:#24324f;
     cursor:pointer;
     font-size:16px;
+     a{
+      text-decoration:none;
+     }
       ul{
         display:${props=>props.dasboardmenu};
         transition: all 1s ease-out;
@@ -96,8 +100,13 @@ const Navbar = ()=>{
           <Secondmenu>
             <Menu dasboardmenu={Menudata.display}>
               <li><Icon><FontAwesomeIcon icon={faSearch}/></Icon>Rechercher</li>
-              <li><Icon><FontAwesomeIcon icon={faPlusCircle}/></Icon>Proposer un Trajet</li>
               <li>
+                <Link to="Login">
+                <Icon><FontAwesomeIcon icon={faPlusCircle}/></Icon>Proposer un Trajet
+                </Link>
+                </li>
+         
+          <li>
 
                
                 {
