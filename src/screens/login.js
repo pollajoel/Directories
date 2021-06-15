@@ -12,14 +12,17 @@ const Login = () =>{
     const url = 'https://covoituragebackend.herokuapp.com/api/v1/login';
     
 
-    const Submit = (e,Formstate)=>{
+    const Submit = async (e,Formstate)=>{
         
         e.preventDefault();
 
         const logindata = JSON.stringify(Formstate);
+        console.log( logindata )
 
-        fetch(url,{method:"POST", headers:{"content-type":"Application/json"},
-        body: logindata}).then(res=>res.json()).then(data=>{}).catch(err=>{console.log( err )});
+        const data = await fetch(url,{method:"POST", headers:{"content-type":"Application/json"},
+        body: logindata}).then(res=>res.json())
+
+        console.log( data );
     }
 
     return (

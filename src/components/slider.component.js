@@ -105,7 +105,7 @@ const Separator = styled.hr `
 const Slider = ()=>{
 
     return(
-        <div>
+        <div className="animate__animated animate__bounce">
         <Slide image={imageslider} alt="wakawaka slider">
             <Container>
                 <TitleContainer><h1>Et si on Partait ensemble ?</h1></TitleContainer>

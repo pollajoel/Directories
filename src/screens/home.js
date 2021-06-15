@@ -104,7 +104,7 @@ const Home =()=>{
 
     return (
         <HomePage>
-            <Navbar></Navbar>
+            <Navbar ></Navbar>
             <CovidBarre></CovidBarre>
             <Slider></Slider>
             <Directories data={Data}></Directories>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import List from '../static/images/list.png';
 import { faMobile, faStreetView, faVoicemail} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 
 const Container = styled.div `
@@ -28,6 +29,12 @@ const Widgets= styled.ul `
 
 const Menu = styled.li `
     list-style-image:url(${props=>props.puce});
+    a{
+        color:#fff;
+        text-decoration: none;
+    }
+
+
 `
 
 const Copyright = styled.div `
@@ -46,16 +53,22 @@ const Newsletter =  styled.form `
 
   div{
       border: 2px solid #fff;
-      border-radius: 16px;
+      border-radius: 22px;
+      background-color: #fff;
   }
 
   input[type=submit]{
-      border-top-right-radius:16px;
-      border-bottom-right-radius:16px;
+      border-top-right-radius:19px;
+      border-bottom-right-radius:19px;
       background-color: #ff9e67;
       height: 52px;
       border-width: 0px;
-      cursor:pointer
+      cursor:pointer;
+      padding: 18px;
+      &:hover{
+          background-color: #34489f;
+          color: #fff;
+      }
   }
 
   input[type=text]{
@@ -98,7 +111,7 @@ const Footer = ()=>{
             </Col>
             <Col>
              <Widgets>
-             <Menu puce={List}>Accueil</Menu>
+             <Menu puce={List}><Link to="/home"> Accueil</Link></Menu>
              <Menu puce={List}>A propos</Menu>
              <Menu puce={List}>Trouver un Trajet</Menu>
              <Menu puce={List}>Contact</Menu>
@@ -116,7 +129,7 @@ const Footer = ()=>{
             <Widgets>
                 <Newsletter onSubmit={e=>SubmitForm(e)}>
                     <div>
-                        <input type="text" name="email" name="email" onChange={e=>SetNewsFormState({...NewsFormState,email:e.target.value})}></input>
+                        <input type="text" name="email" onChange={e=>SetNewsFormState({...NewsFormState,email:e.target.value})}/>
                         <input type="submit" value="S'inscrire"/>
                     </div>
                 </Newsletter>

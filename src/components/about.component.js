@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCar, faGift, faIdCard, faPlus,faUserCircle} from '@fortawesome/free-solid-svg-icons';
+import { faCar, faGift, faIdCard} from '@fortawesome/free-solid-svg-icons';
 
 
 const Container = styled.div `
@@ -16,7 +16,7 @@ const Col = styled.div `
 `
 
 const ColSm = styled.div `
-    width: 30%
+    width: 30%;
 
 `
 

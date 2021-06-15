@@ -16,13 +16,13 @@ const Container = styled.div `
 `
 
 const Col = styled.div `
-    width: 23%;
+    width: 20%;
     border:1px solid ${props=>props.bgcolor};
     margin: 20px;
     display: flex;
     flex-direction: column;
     border-top-left-radius: 20px;
-    height: 236px;
+    height: 254px;
     padding: 24px;
     background-color: ${props=>props.bgcolor};
     cursor: pointer;
